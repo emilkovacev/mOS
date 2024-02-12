@@ -64,7 +64,7 @@ uint16_t vaddrEntryIdx(const void *vaddr) {
 // low 12 bits
 uint16_t vaddrOffset(const void *vaddr) {
     // 12-bit mask
-    return (uint32_t)(vaddr)&0xfff;
+    return (uint32_t)(vaddr) & 0xfff;
 }
 
 void *toVaddr(uint16_t dirIdx, uint16_t entryIdx, uint16_t offset) {

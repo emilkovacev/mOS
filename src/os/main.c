@@ -3,9 +3,9 @@
 #include "hard/idt.h"
 #include "paging.h"
 #include "pit/pit.h"
+#include "stdlib/palloc.h"
 #include "test.h"
 #include "video/VGA_text.h"
-#include "stdlib/palloc.h"
 
 int os_main() {
     makeInterruptTable();
